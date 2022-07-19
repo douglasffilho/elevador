@@ -1,4 +1,5 @@
 .idea
+*.iml
 out
 Elevador.class
 GestorDeCiclos.class
