@@ -59,11 +59,9 @@ public class Principal {
                         } catch (Exception ignora) {} //ignora erros de qualquer tipo pra manter a execução
                     }
                 }
-
-                /**
-                 * Para a thread corrente ao sair do loop de execução da obtenção de comandos do teclado
-                 */
-                Thread.currentThread().interrupt();
+                
+                // Após sair do loop, fecha o recurso de scanner
+                scanner.close();
             }
         });
         /**
@@ -73,6 +71,7 @@ public class Principal {
 
         /**
          * Teste de comandos para mover o elevador
+         * Só adiciona o destino se ainda não existir na fila
          */
         elevador.addDestino(3);
         elevador.addDestino(5);

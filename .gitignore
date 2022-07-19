@@ -1,2 +1,11 @@
 .idea
 out
+Elevador.class
+GestorDeCiclos.class
+GestorDeFila.class
+Principal$1.class
+Principal.class
+Sensor.class
+Sentido.class
+.classpath
+.project

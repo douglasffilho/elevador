@@ -49,7 +49,6 @@ public class Elevador implements Runnable {
             } catch (Exception ignora) {
             }
         }
-        Thread.currentThread().interrupt();
     }
 
     /**
