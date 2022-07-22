@@ -48,20 +48,9 @@ public class GestorDeFila {
     }
 
     /**
-     * Método que converte o objeto da fila em uma string para usar na saída do console
+     * Le a fila
      */
-    public String getFilaString() {
-        if (this.fila.isEmpty())
-            return "[]";
-
-        StringBuilder sb = new StringBuilder("[");
-        for (int i = 0; i < this.fila.size(); i++) {
-            int destino = this.fila.get(i);
-            if (i == this.fila.size() - 1)
-                sb.append(destino);
-            else
-                sb.append(destino).append(", ");
-        }
-        return sb.append("]").toString();
+    public List<Integer> getFila() {
+        return this.fila;
     }
 }
