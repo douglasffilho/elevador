@@ -146,7 +146,7 @@ public class Elevador implements Runnable {
                 this.sensor.getAndarAtual(),
                 this.sentido,
                 this.gestorDeCiclos.getCicloAtual(),
-                this.gestorDeFila.getFilaString()
+                this.gestorDeFila.getFila()
         );
     }
 }
